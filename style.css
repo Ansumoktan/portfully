@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+text-decoration: none;
+color: black;
+position: relative;
+}
+nav ul li a::after {
+    content: '';
+    height: 2px;
+    background-color: red;
+    width: 0;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: o.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+#info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+}
+#about {
+    height: 100vh;
+   display: flex;
+   justify-content: space-around;
+
+}
+.desc h1 {
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.download {
+
+    padding: 10px;
+    background-color: red;
+    border-radius: 5px;
+}
+.download:hover {
+    background-color: rgb(113, 20, 20);
+}
+#skills{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px;
+}
+.skill-container{
+    position: relative;
+}
+
+#skills h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: red;
+
+}
+
+.bar {
+    height: 15px;
+    width: 100%;
+    background-color: rgb(114, 20, 20);
+    border-radius: 10px;
+
+}
+
+.actual {
+    border-radius: 10px;
+    height: 15px;
+width: 90%;
+background-color: red;
+position: absolute;
+top: 18px;
+}
+.html {
+    width: 90%;
+}
+.skill-text {
+display: flex;
+justify-content: space-between;
+}
+
+.css {
+    width: 70%;
+}
+
+#project {
+    height: 100vh;
+
+}
+
+#project h1 {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-align: center;
+}
+
+.project-card {
+    height: 350px;
+    width: 350px;
+    background-color: red;
+    border-radius: 10px;
+    position: relative;
+} 
+.project-card img {
+    height:350px ;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.
